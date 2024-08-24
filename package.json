@@ -1,0 +1,38 @@
+{
+  "name": "translator-js",
+  "type": "module",
+  "description": "JavaScript JSON Translator based on Laravel Translator",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "keywords": [
+    "javascript",
+    "laravel",
+    "localization",
+    "react",
+    "translator",
+    "typescript",
+    "vuejs"
+  ],
+  "author": "Norman Huth",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.5.0",
+    "@vitest/coverage-v8": "^2.0.5",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.2",
+    "vite-plugin-dts": "^4.0.3",
+    "vitest": "^2.0.5"
+  }
+}
