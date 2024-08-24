@@ -186,12 +186,10 @@ TypeScript:
 //..
 __: function(key: string, replace = {}) {
   return __(key, replace)
-}
-,
+},
 trans: function(key: string, replace = {}) {
   return trans(key, replace)
-}
-,
+},
 trans_choice: function(key: string, number: number, replace = {}) {
   return trans_choice(key, number, replace)
 }
