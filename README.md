@@ -299,7 +299,7 @@ constructor(
 Manually set the translations.
 
 ```javascript
-Translator.translations(
+Translator.setTranslations(
   { "Foo": "Bar" }
 )
 ```
