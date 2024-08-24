@@ -115,7 +115,7 @@ class HandleInertiaRequests extends Middleware
 
 #### Vue.js / React / VanillaJs etc
 
-Add the Translator to Your `/resources/js/bootstrap.{js|ts}`.
+Add the Translator to the `/resources/js/bootstrap.{js|ts}`.
 This example add the alias `__()` for `trans()`. This makes it possible to use `trans()` or `__()` for translation well
 as in Laravel™.
 
