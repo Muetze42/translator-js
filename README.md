@@ -31,7 +31,7 @@ npm i -D @norman-huth/translator-js
     * [Optional: ESLint](#optional-eslint)
 * [Digging Deeper](#digging-deeper)
   * [The Translator Constructor](#the-translator-constructor)
-  * [`Translator.translations()`](#translatorsettranslations)
+  * [`Translator.setTranslations()`](#translatorsettranslations)
   * [`Translator.setLocale()`](#translatorsetlocale)
   * [`Translator.bootstrap()`](#translatorbootstrap)
   * [Example: Other Inertia.js Share Key](#example-other-inertiajs-share-key)
