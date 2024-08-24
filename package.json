@@ -1,7 +1,7 @@
 {
   "name": "translator-js",
   "type": "module",
-  "description": "JavaScript JSON Translator based on Laravel Translator",
+  "description": "JavaScript JSON Translator based on Laravel™ Translator",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "typings": "./dist/index.d.ts",
