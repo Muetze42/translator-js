@@ -60,3 +60,17 @@ test('5 minutes ago', async () => {
     TranslatorJs.trans_choice('minutes_ago', 5, {value: 5})
   ).toBe('5 minutes ago')
 })
+
+test('1 with no translation', async () => {
+  TranslatorJs.setLocale('de')
+  expect(
+    TranslatorJs.trans_choice('There is one cat|There are many cats', 1)
+  ).toBe('There is one cat')
+})
+
+test('2 with no translation', async () => {
+  TranslatorJs.setLocale('de')
+  expect(
+    TranslatorJs.trans_choice('There is one cat|There are many cats', 2)
+  ).toBe('There are many cats')
+})
