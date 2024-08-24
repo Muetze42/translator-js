@@ -1,0 +1,10 @@
+{
+  "Hello": "Hallo",
+  "Welcome, :name": "Willkommen :name",
+  "Good morning :name": "Guten Morgen :Name",
+  "Good evening :name": "Guten Abend :NAME",
+  "Hello :name and good day :name. Have fun, :name.":  "Hallo :name und schönen Tag :Name, Viel Spaße :NAME.",
+  "There is one apple|There are many apples": "Hay una manzana|Hay muchas manzanas",
+  "apples": "{0} There are none|[1,19] There are some|[20,*] There are many",
+  "minutes_ago": "{1} :value minute ago|[2,*] :value minutes ago"
+}

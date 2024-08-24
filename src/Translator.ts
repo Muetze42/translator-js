@@ -87,7 +87,7 @@ class Translator {
    * Translate the given string.
    */
   public trans(key: string, replace: { [key: string | number]: string | number } = {}): string {
-    if (this.translations && data_get(this.translations, key)) {
+    if (this.translations && this.translations[key]) {
       key = this.translations[key]?.toString()
     } else {
       this.logWarn('Message: Key not found', key)
