@@ -1,5 +1,5 @@
 {
-  "name": "translator-js",
+  "name": "@norman-huth/translator-js",
   "type": "module",
   "description": "JavaScript JSON Translator based on Laravel™ Translator",
   "main": "./dist/index.cjs",
