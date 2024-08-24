@@ -45,3 +45,10 @@ test('replace multiple', async () => {
     TranslatorJs.trans('Hello :name and good day :name. Have fun, :name.', {name: 'norman'})
   ).toBe('Hallo norman und schönen Tag Norman, Viel Spaße NORMAN.')
 })
+
+test('not existing', async () => {
+  TranslatorJs.setLocale('de')
+  expect(
+    TranslatorJs.trans('Goodbye, :name', {name: 'Norman'})
+  ).toBe('Goodbye, Norman')
+})
