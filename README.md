@@ -38,7 +38,7 @@ npm i -D @norman-huth/translator-js
 
 ## Example:
 
-JSON-File with translations:
+Example JSON-File with translations:
 
 ```json
 {
