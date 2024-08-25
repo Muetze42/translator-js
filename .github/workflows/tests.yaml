@@ -25,10 +25,10 @@ jobs:
         with:
           node-version: lts/*
           registry-url: https://registry.npmjs.org
-          cache: pnpm install --frozen-lockfile
+          cache: pnpm
 
       - name: Install dependencies 📦️
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
       - name: Execute tests 🔍
         run: pnpm test
