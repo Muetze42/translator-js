@@ -249,14 +249,11 @@ declare module 'vue' {
 
 ```javascript
 module.exports = {
-  //...
   globals: {
     __: true,
     trans: true,
     trans_choice: true,
-    //...
   },
-  //...
 }
 ```
 
