@@ -11,23 +11,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout 🛎️
         uses: actions/checkout@v4
 
-      - uses: pnpm/action-setup@v4
+      - uses: pnpm/action-setup@v4 📥
         name: Install pnpm
         with:
           version: 9
           run_install: false
 
-      - name: Install Node.js
+      - name: Use Node LTS ✨
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: 'pnpm'
+          node-version: lts/*
+          registry-url: https://registry.npmjs.org
+          cache: pnpm install --frozen-lockfile
 
-      - name: Install dependencies
+      - name: Install dependencies 📦️
         run: pnpm install
 
-      - name: Execute tests
+      - name: Execute tests 🔍
         run: pnpm test
