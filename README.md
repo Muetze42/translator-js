@@ -78,6 +78,13 @@ const Trans = new Translator()
 return Trans.trans('Hello')
 ```
 
+Or create alternativ an "empty" instance:
+
+```javascript
+Translator.factory()
+Translator.factory(translations)
+```
+
 ### Laravel™ with Inertia.js
 
 Share the App JSON-Translations via `HandleInertiaRequests` middleware.

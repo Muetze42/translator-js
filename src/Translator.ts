@@ -45,6 +45,13 @@ class Translator {
   }
 
   /**
+   * Get a Translator factory instance.
+   */
+  public static factory(translations: Translations | null = null): Translator {
+    return new Translator('', '', '', null, translations, false)
+  }
+
+  /**
    * Bootrap the translations' data.
    */
   public bootstrap() {
