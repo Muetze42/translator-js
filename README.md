@@ -109,6 +109,8 @@ class HandleInertiaRequests extends Middleware
 
     /**
      * Load the messages for the given locale.
+     *
+     * @return array<string, string>
      */
     protected function jsonTranslations(): array
     {
