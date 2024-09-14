@@ -126,11 +126,7 @@ class Translator {
 
     let locale = document.documentElement.lang
 
-    if (!locale) {
-      return null
-    }
-
-    return locale.replace('-', '_')
+    return locale ? locale : null
   }
 
   /**
