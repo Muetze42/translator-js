@@ -22,6 +22,7 @@ class Translator {
   public dataAttribute: string
   public locale: string | null
   public translations: Translations
+  public logWarnAndDebug: boolean
 
   /**
    * Create a new Translator instance.
@@ -32,13 +33,15 @@ class Translator {
     dataAttribute: string = 'page',
     locale: string | null = null,
     translations: Translations | null = null,
-    bootstrap: boolean = true
+    bootstrap: boolean = true,
+    logWarnAndDebug: boolean = false
   ) {
     this.prop = prop
     this.elementId = elementId
     this.dataAttribute = dataAttribute
     this.locale = locale
     this.translations = translations ? translations : {}
+    this.logWarnAndDebug = logWarnAndDebug
     if (bootstrap) {
       this.bootstrap()
     }
@@ -47,8 +50,15 @@ class Translator {
   /**
    * Get a Translator factory instance.
    */
-  public static factory(translations: Translations | null = null): Translator {
-    return new Translator('', '', '', null, translations, false)
+  public static factory(translations: Translations | null = null, logWarnAndDebug: boolean = false): Translator {
+    return new Translator('', '', '', null, translations, false, logWarnAndDebug)
+  }
+
+  /**
+   * Determine if the Translator should log warn and debug messages.
+   */
+  public logWarnAndDebugMessages(state: boolean = true) {
+    this.logWarnAndDebug = state
   }
 
   /**
@@ -597,6 +607,9 @@ class Translator {
    * Output a message to the console at the "error" log level.
    */
   protected log(level: 'log' | 'error' | 'warn' | 'debug', ...data: any) {
+    if (!this.logWarnAndDebug && level != 'error') {
+      return
+    }
     console[level]('[TRANSLATOR]', ...data)
   }
 }
